@@ -1,0 +1,14 @@
+def fibonacci(n):
+    fib_sequence = [0, 1]
+
+    while len(fib_sequence) < n:
+        fib_sequence.append(fib_sequence[-1] + fib_sequence[-2])
+
+    return fib_sequence
+
+# Get user input for the number of terms in the Fibonacci sequence
+num_terms = int(input("Enter the number of Fibonacci terms to generate: "))
+
+# Generate and print the Fibonacci sequence
+result = fibonacci(num_terms)
+print(result)
